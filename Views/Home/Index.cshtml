@@ -1,0 +1,17 @@
+﻿@model List<Urun>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@Html.Raw(ViewData["Msg"])
+
+<form method="post">
+    <ul>
+        @foreach (var urun in Model)
+        {
+            <li><label><input required type="radio" name="ad" value="@urun.Ad" /> @urun.Ad (Stok: @urun.Stok) @urun.Fiyat TL</label></li>
+        }
+    </ul>
+    <p><input type="number" required name="para" placeholder="Para"> <button>Satın Al</button></p>
+</form>

@@ -1,0 +1,5 @@
+Elma|10|2
+Kavun|150|0
+Karpuz|125|4
+Şeftali|20|5
+Portakal|18|5
